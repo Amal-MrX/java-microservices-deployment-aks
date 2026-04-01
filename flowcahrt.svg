@@ -1,0 +1,249 @@
+<svg width="900" viewBox="0 0 900 1320" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+ 
+<rect width="900" height="1320" fill="#FAFAF8" rx="0"/>
+ 
+<text x="450" y="36" text-anchor="middle" font-size="20" font-weight="600" fill="#1a1a1a">Micro Services Project-1</text>
+<text x="450" y="56" text-anchor="middle" font-size="13" fill="#888780">End-to-end DevOps pipeline: Terraform → EKS → Jenkins CI → ArgoCD CD → Prometheus/Grafana</text>
+ 
+<rect x="20" y="68" width="860" height="2" rx="1" fill="#D3D1C7"/>
+ 
+ 
+<rect x="20" y="84" width="860" height="36" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="450" y="102" text-anchor="middle" font-size="14" font-weight="600" fill="#633806" dominant-baseline="central">Phase 1 — Infrastructure Provisioning (Terraform + EKS/KOPS)</text>
+ 
+<rect x="30" y="136" width="150" height="60" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="105" y="160" text-anchor="middle" font-size="13" font-weight="600" fill="#633806" dominant-baseline="central">Terraform</text>
+<text x="105" y="180" text-anchor="middle" font-size="11" fill="#854F0B" dominant-baseline="central">3-tier AWS modules</text>
+ 
+<line x1="180" y1="166" x2="200" y2="166" stroke="#BA7517" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="200" y="136" width="160" height="60" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="280" y="160" text-anchor="middle" font-size="13" font-weight="600" fill="#633806" dominant-baseline="central">EKS / KOPS</text>
+<text x="280" y="180" text-anchor="middle" font-size="11" fill="#854F0B" dominant-baseline="central">Cluster created on AWS</text>
+ 
+<line x1="360" y1="166" x2="380" y2="166" stroke="#BA7517" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="380" y="136" width="200" height="60" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="480" y="157" text-anchor="middle" font-size="13" font-weight="600" fill="#633806" dominant-baseline="central">Configure cluster</text>
+<text x="480" y="177" text-anchor="middle" font-size="11" fill="#854F0B" dominant-baseline="central">CNI, Ingress, Metric, OIDC, Helm</text>
+ 
+<line x1="580" y1="166" x2="600" y2="166" stroke="#BA7517" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="600" y="136" width="170" height="60" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+<text x="685" y="160" text-anchor="middle" font-size="13" font-weight="600" fill="#27500A" dominant-baseline="central">Validate cluster</text>
+<text x="685" y="180" text-anchor="middle" font-size="11" fill="#3B6D11" dominant-baseline="central">Create demo pods, test</text>
+ 
+<rect x="20" y="68" width="860" height="0" rx="0" fill="none"/>
+<line x1="450" y1="196" x2="450" y2="220" stroke="#888780" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="450" y="214" text-anchor="middle" font-size="11" fill="#888780">cluster ready</text>
+ 
+ 
+<rect x="20" y="230" width="860" height="36" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="450" y="248" text-anchor="middle" font-size="14" font-weight="600" fill="#0C447C" dominant-baseline="central">Phase 2 — CI Pipeline (GitHub → Jenkins → Docker Hub)</text>
+ 
+<rect x="30" y="284" width="110" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="85" y="306" text-anchor="middle" font-size="13" font-weight="600" fill="#2C2C2A" dominant-baseline="central">Dev push</text>
+<text x="85" y="326" text-anchor="middle" font-size="11" fill="#5F5E5A" dominant-baseline="central">GitHub repo</text>
+ 
+<line x1="140" y1="312" x2="160" y2="312" stroke="#888780" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="160" y="284" width="120" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="220" y="306" text-anchor="middle" font-size="13" font-weight="600" fill="#0C447C" dominant-baseline="central">Jenkins</text>
+<text x="220" y="326" text-anchor="middle" font-size="11" fill="#185FA5" dominant-baseline="central">Webhook trigger</text>
+ 
+<line x1="280" y1="312" x2="300" y2="312" stroke="#185FA5" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="300" y="284" width="110" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="355" y="306" text-anchor="middle" font-size="13" font-weight="600" fill="#0C447C" dominant-baseline="central">Build</text>
+<text x="355" y="326" text-anchor="middle" font-size="11" fill="#185FA5" dominant-baseline="central">Compile + test</text>
+ 
+<line x1="410" y1="312" x2="430" y2="312" stroke="#185FA5" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="430" y="284" width="120" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="490" y="306" text-anchor="middle" font-size="13" font-weight="600" fill="#085041" dominant-baseline="central">SonarQube</text>
+<text x="490" y="326" text-anchor="middle" font-size="11" fill="#0F6E56" dominant-baseline="central">Code quality gate</text>
+ 
+<line x1="550" y1="312" x2="570" y2="312" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="570" y="284" width="110" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="625" y="306" text-anchor="middle" font-size="13" font-weight="600" fill="#085041" dominant-baseline="central">OWASP</text>
+<text x="625" y="326" text-anchor="middle" font-size="11" fill="#0F6E56" dominant-baseline="central">Dependency check</text>
+ 
+<line x1="680" y1="312" x2="700" y2="312" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="700" y="284" width="100" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="750" y="306" text-anchor="middle" font-size="13" font-weight="600" fill="#085041" dominant-baseline="central">Trivy scan</text>
+<text x="750" y="326" text-anchor="middle" font-size="11" fill="#0F6E56" dominant-baseline="central">FS + image scan</text>
+ 
+<line x1="750" y1="340" x2="750" y2="374" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="690" y="374" width="120" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="750" y="396" text-anchor="middle" font-size="13" font-weight="600" fill="#0C447C" dominant-baseline="central">Docker build</text>
+<text x="750" y="416" text-anchor="middle" font-size="11" fill="#185FA5" dominant-baseline="central">Tag with commit SHA</text>
+ 
+<line x1="690" y1="402" x2="670" y2="402" stroke="#185FA5" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="550" y="374" width="120" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="610" y="396" text-anchor="middle" font-size="13" font-weight="600" fill="#0C447C" dominant-baseline="central">Docker push</text>
+<text x="610" y="416" text-anchor="middle" font-size="11" fill="#185FA5" dominant-baseline="central">To Docker Hub</text>
+ 
+<line x1="550" y1="402" x2="530" y2="402" stroke="#185FA5" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="400" y="374" width="130" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="465" y="396" text-anchor="middle" font-size="13" font-weight="600" fill="#2C2C2A" dominant-baseline="central">Update manifest</text>
+<text x="465" y="416" text-anchor="middle" font-size="11" fill="#5F5E5A" dominant-baseline="central">New image tag in Git</text>
+ 
+<line x1="400" y1="402" x2="380" y2="402" stroke="#888780" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="270" y="374" width="110" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="325" y="396" text-anchor="middle" font-size="13" font-weight="600" fill="#2C2C2A" dominant-baseline="central">GitHub</text>
+<text x="325" y="416" text-anchor="middle" font-size="11" fill="#5F5E5A" dominant-baseline="central">Manifest repo</text>
+ 
+<rect x="30" y="374" width="120" height="56" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="90" y="396" text-anchor="middle" font-size="13" font-weight="600" fill="#633806" dominant-baseline="central">Slack notify</text>
+<text x="90" y="416" text-anchor="middle" font-size="11" fill="#854F0B" dominant-baseline="central">Build + scan result</text>
+ 
+<rect x="30" y="448" width="860" height="30" rx="6" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="450" y="463" text-anchor="middle" font-size="12" fill="#2C2C2A" dominant-baseline="central">Pipeline stages: Clean → Code → SonarQube → Quality gate → OWASP → Trivy FS → Docker build → Trivy image → Tag/push → Update manifest → Slack</text>
+ 
+ 
+<rect x="20" y="492" width="860" height="36" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="450" y="510" text-anchor="middle" font-size="14" font-weight="600" fill="#085041" dominant-baseline="central">Phase 3 — CD Pipeline (GitOps: ArgoCD → EKS)</text>
+ 
+<rect x="30" y="546" width="130" height="60" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="95" y="570" text-anchor="middle" font-size="13" font-weight="600" fill="#2C2C2A" dominant-baseline="central">GitHub</text>
+<text x="95" y="590" text-anchor="middle" font-size="11" fill="#5F5E5A" dominant-baseline="central">Manifest updated</text>
+ 
+<line x1="160" y1="576" x2="180" y2="576" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="180" y="546" width="150" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="255" y="570" text-anchor="middle" font-size="13" font-weight="600" fill="#085041" dominant-baseline="central">ArgoCD</text>
+<text x="255" y="590" text-anchor="middle" font-size="11" fill="#0F6E56" dominant-baseline="central">Watches + syncs Git</text>
+ 
+<line x1="330" y1="576" x2="350" y2="576" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="350" y="546" width="150" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="425" y="570" text-anchor="middle" font-size="13" font-weight="600" fill="#085041" dominant-baseline="central">Amazon EKS</text>
+<text x="425" y="590" text-anchor="middle" font-size="11" fill="#0F6E56" dominant-baseline="central">Pods updated</text>
+ 
+<line x1="500" y1="576" x2="520" y2="576" stroke="#185FA5" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="520" y="546" width="160" height="60" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="600" y="570" text-anchor="middle" font-size="13" font-weight="600" fill="#0C447C" dominant-baseline="central">ELB DNS verify</text>
+<text x="600" y="590" text-anchor="middle" font-size="11" fill="#185FA5" dominant-baseline="central">App health check</text>
+ 
+<rect x="710" y="546" width="150" height="60" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="785" y="570" text-anchor="middle" font-size="13" font-weight="600" fill="#633806" dominant-baseline="central">Slack notify</text>
+<text x="785" y="590" text-anchor="middle" font-size="11" fill="#854F0B" dominant-baseline="central">Deploy success</text>
+ 
+<line x1="680" y1="576" x2="710" y2="576" stroke="#BA7517" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<line x1="425" y1="606" x2="425" y2="638" stroke="#888780" stroke-width="1" stroke-dasharray="4 3"/>
+ 
+<rect x="30" y="648" width="860" height="80" rx="10" fill="none" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="5 3"/>
+<text x="50" y="668" font-size="12" font-weight="600" fill="#2C2C2A" dominant-baseline="central">Deployment flow</text>
+ 
+<rect x="50" y="680" width="170" height="34" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="135" y="697" text-anchor="middle" font-size="12" font-weight="500" fill="#0C447C" dominant-baseline="central">Test / UAT namespace</text>
+ 
+<line x1="220" y1="697" x2="246" y2="697" stroke="#185FA5" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="233" y="690" text-anchor="middle" font-size="10" fill="#888780">pass</text>
+ 
+<rect x="246" y="680" width="170" height="34" rx="6" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+<text x="331" y="697" text-anchor="middle" font-size="12" font-weight="500" fill="#27500A" dominant-baseline="central">Production namespace</text>
+ 
+<line x1="416" y1="697" x2="440" y2="697" stroke="#3B6D11" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="440" y="680" width="170" height="34" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="525" y="697" text-anchor="middle" font-size="12" font-weight="500" fill="#633806" dominant-baseline="central">Slack notification</text>
+ 
+ 
+<rect x="20" y="750" width="860" height="36" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="450" y="768" text-anchor="middle" font-size="14" font-weight="600" fill="#3C3489" dominant-baseline="central">Phase 4 — Monitoring (Prometheus + Grafana)</text>
+ 
+<rect x="100" y="806" width="180" height="60" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="190" y="830" text-anchor="middle" font-size="13" font-weight="600" fill="#3C3489" dominant-baseline="central">Prometheus</text>
+<text x="190" y="850" text-anchor="middle" font-size="11" fill="#534AB7" dominant-baseline="central">Metrics scraping</text>
+ 
+<line x1="280" y1="836" x2="310" y2="836" stroke="#534AB7" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="310" y="806" width="180" height="60" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="400" y="830" text-anchor="middle" font-size="13" font-weight="600" fill="#3C3489" dominant-baseline="central">Grafana</text>
+<text x="400" y="850" text-anchor="middle" font-size="11" fill="#534AB7" dominant-baseline="central">Dashboards + alerts</text>
+ 
+<line x1="490" y1="836" x2="520" y2="836" stroke="#534AB7" stroke-width="1.5" marker-end="url(#arr)"/>
+ 
+<rect x="520" y="806" width="180" height="60" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="610" y="830" text-anchor="middle" font-size="13" font-weight="600" fill="#2C2C2A" dominant-baseline="central">Tomcat</text>
+<text x="610" y="850" text-anchor="middle" font-size="11" fill="#5F5E5A" dominant-baseline="central">App server</text>
+ 
+ 
+<rect x="20" y="892" width="860" height="36" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="450" y="910" text-anchor="middle" font-size="14" font-weight="600" fill="#2C2C2A" dominant-baseline="central">Tools Reference</text>
+ 
+<rect x="30" y="942" width="860" height="330" rx="10" fill="none" stroke="#D3D1C7" stroke-width="0.5"/>
+ 
+<text x="56" y="968" font-size="12" font-weight="600" fill="#2C2C2A">Cloud</text>
+<rect x="56" y="978" width="70" height="22" rx="4" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="91" y="989" text-anchor="middle" font-size="11" fill="#633806" dominant-baseline="central">AWS</text>
+ 
+<text x="56" y="1018" font-size="12" font-weight="600" fill="#2C2C2A">Infra</text>
+<rect x="56" y="1028" width="100" height="22" rx="4" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="106" y="1039" text-anchor="middle" font-size="11" fill="#633806" dominant-baseline="central">Terraform</text>
+<rect x="166" y="1028" width="60" height="22" rx="4" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="196" y="1039" text-anchor="middle" font-size="11" fill="#633806" dominant-baseline="central">EKS</text>
+<rect x="236" y="1028" width="70" height="22" rx="4" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="271" y="1039" text-anchor="middle" font-size="11" fill="#633806" dominant-baseline="central">KOPS</text>
+ 
+<text x="56" y="1068" font-size="12" font-weight="600" fill="#2C2C2A">Source control</text>
+<rect x="56" y="1078" width="60" height="22" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="86" y="1089" text-anchor="middle" font-size="11" fill="#2C2C2A" dominant-baseline="central">Git</text>
+<rect x="126" y="1078" width="80" height="22" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="166" y="1089" text-anchor="middle" font-size="11" fill="#2C2C2A" dominant-baseline="central">GitHub</text>
+ 
+<text x="56" y="1118" font-size="12" font-weight="600" fill="#2C2C2A">CI</text>
+<rect x="56" y="1128" width="90" height="22" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="101" y="1139" text-anchor="middle" font-size="11" fill="#0C447C" dominant-baseline="central">Jenkins</text>
+ 
+<text x="56" y="1168" font-size="12" font-weight="600" fill="#2C2C2A">CD</text>
+<rect x="56" y="1178" width="90" height="22" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="101" y="1189" text-anchor="middle" font-size="11" fill="#085041" dominant-baseline="central">ArgoCD</text>
+ 
+<text x="56" y="1218" font-size="12" font-weight="600" fill="#2C2C2A">Package manager</text>
+<rect x="56" y="1228" width="70" height="22" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="91" y="1239" text-anchor="middle" font-size="11" fill="#2C2C2A" dominant-baseline="central">Helm</text>
+ 
+<text x="350" y="968" font-size="12" font-weight="600" fill="#2C2C2A">Monitoring</text>
+<rect x="350" y="978" width="110" height="22" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="405" y="989" text-anchor="middle" font-size="11" fill="#3C3489" dominant-baseline="central">Prometheus</text>
+<rect x="470" y="978" width="90" height="22" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="515" y="989" text-anchor="middle" font-size="11" fill="#3C3489" dominant-baseline="central">Grafana</text>
+ 
+<text x="350" y="1018" font-size="12" font-weight="600" fill="#2C2C2A">Code quality</text>
+<rect x="350" y="1028" width="110" height="22" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="405" y="1039" text-anchor="middle" font-size="11" fill="#085041" dominant-baseline="central">SonarQube</text>
+ 
+<text x="350" y="1068" font-size="12" font-weight="600" fill="#2C2C2A">Image scan</text>
+<rect x="350" y="1078" width="70" height="22" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="385" y="1089" text-anchor="middle" font-size="11" fill="#085041" dominant-baseline="central">Trivy</text>
+ 
+<text x="350" y="1118" font-size="12" font-weight="600" fill="#2C2C2A">Security scan</text>
+<rect x="350" y="1128" width="90" height="22" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="395" y="1139" text-anchor="middle" font-size="11" fill="#085041" dominant-baseline="central">OWASP</text>
+ 
+<text x="350" y="1168" font-size="12" font-weight="600" fill="#2C2C2A">Notification</text>
+<rect x="350" y="1178" width="80" height="22" rx="4" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="390" y="1189" text-anchor="middle" font-size="11" fill="#633806" dominant-baseline="central">Slack</text>
+ 
+<text x="350" y="1218" font-size="12" font-weight="600" fill="#2C2C2A">App server</text>
+<rect x="350" y="1228" width="90" height="22" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="395" y="1239" text-anchor="middle" font-size="11" fill="#2C2C2A" dominant-baseline="central">Tomcat</text>
+ 
+<rect x="20" y="1278" width="860" height="2" rx="1" fill="#D3D1C7"/>
+<text x="450" y="1300" text-anchor="middle" font-size="11" fill="#888780">Microservices Project-1 — DevOps Pipeline Architecture</text>
+</svg>
