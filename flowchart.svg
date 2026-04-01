@@ -8,23 +8,23 @@
 <rect width="900" height="1320" fill="#FAFAF8" rx="0"/>
  
 <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="600" fill="#1a1a1a">Micro Services Project-1</text>
-<text x="450" y="56" text-anchor="middle" font-size="13" fill="#888780">End-to-end DevOps pipeline: Terraform → EKS → Jenkins CI → ArgoCD CD → Prometheus/Grafana</text>
+<text x="450" y="56" text-anchor="middle" font-size="13" fill="#888780">End-to-end DevOps pipeline: Terraform → AKS → Jenkins CI → ArgoCD CD → Prometheus/Grafana</text>
  
 <rect x="20" y="68" width="860" height="2" rx="1" fill="#D3D1C7"/>
  
  
 <rect x="20" y="84" width="860" height="36" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
-<text x="450" y="102" text-anchor="middle" font-size="14" font-weight="600" fill="#633806" dominant-baseline="central">Phase 1 — Infrastructure Provisioning (Terraform + EKS/KOPS)</text>
+<text x="450" y="102" text-anchor="middle" font-size="14" font-weight="600" fill="#633806" dominant-baseline="central">Phase 1 — Infrastructure Provisioning (Terraform + AKS/KOPS)</text>
  
 <rect x="30" y="136" width="150" height="60" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
 <text x="105" y="160" text-anchor="middle" font-size="13" font-weight="600" fill="#633806" dominant-baseline="central">Terraform</text>
-<text x="105" y="180" text-anchor="middle" font-size="11" fill="#854F0B" dominant-baseline="central">3-tier AWS modules</text>
+<text x="105" y="180" text-anchor="middle" font-size="11" fill="#854F0B" dominant-baseline="central">3-tier AZURE modules</text>
  
 <line x1="180" y1="166" x2="200" y2="166" stroke="#BA7517" stroke-width="1.5" marker-end="url(#arr)"/>
  
 <rect x="200" y="136" width="160" height="60" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
-<text x="280" y="160" text-anchor="middle" font-size="13" font-weight="600" fill="#633806" dominant-baseline="central">EKS / KOPS</text>
-<text x="280" y="180" text-anchor="middle" font-size="11" fill="#854F0B" dominant-baseline="central">Cluster created on AWS</text>
+<text x="280" y="160" text-anchor="middle" font-size="13" font-weight="600" fill="#633806" dominant-baseline="central">AKS / KOPS</text>
+<text x="280" y="180" text-anchor="middle" font-size="11" fill="#854F0B" dominant-baseline="central">Cluster created on AZURE</text>
  
 <line x1="360" y1="166" x2="380" y2="166" stroke="#BA7517" stroke-width="1.5" marker-end="url(#arr)"/>
  
@@ -113,7 +113,7 @@
  
  
 <rect x="20" y="492" width="860" height="36" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="450" y="510" text-anchor="middle" font-size="14" font-weight="600" fill="#085041" dominant-baseline="central">Phase 3 — CD Pipeline (GitOps: ArgoCD → EKS)</text>
+<text x="450" y="510" text-anchor="middle" font-size="14" font-weight="600" fill="#085041" dominant-baseline="central">Phase 3 — CD Pipeline (GitOps: ArgoCD → AKS)</text>
  
 <rect x="30" y="546" width="130" height="60" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
 <text x="95" y="570" text-anchor="middle" font-size="13" font-weight="600" fill="#2C2C2A" dominant-baseline="central">GitHub</text>
@@ -128,7 +128,7 @@
 <line x1="330" y1="576" x2="350" y2="576" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arr)"/>
  
 <rect x="350" y="546" width="150" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="425" y="570" text-anchor="middle" font-size="13" font-weight="600" fill="#085041" dominant-baseline="central">Amazon EKS</text>
+<text x="425" y="570" text-anchor="middle" font-size="13" font-weight="600" fill="#085041" dominant-baseline="central">Amazon AKS</text>
 <text x="425" y="590" text-anchor="middle" font-size="11" fill="#0F6E56" dominant-baseline="central">Pods updated</text>
  
 <line x1="500" y1="576" x2="520" y2="576" stroke="#185FA5" stroke-width="1.5" marker-end="url(#arr)"/>
@@ -190,13 +190,13 @@
  
 <text x="56" y="968" font-size="12" font-weight="600" fill="#2C2C2A">Cloud</text>
 <rect x="56" y="978" width="70" height="22" rx="4" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
-<text x="91" y="989" text-anchor="middle" font-size="11" fill="#633806" dominant-baseline="central">AWS</text>
+<text x="91" y="989" text-anchor="middle" font-size="11" fill="#633806" dominant-baseline="central">AZURE</text>
  
 <text x="56" y="1018" font-size="12" font-weight="600" fill="#2C2C2A">Infra</text>
 <rect x="56" y="1028" width="100" height="22" rx="4" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
 <text x="106" y="1039" text-anchor="middle" font-size="11" fill="#633806" dominant-baseline="central">Terraform</text>
 <rect x="166" y="1028" width="60" height="22" rx="4" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
-<text x="196" y="1039" text-anchor="middle" font-size="11" fill="#633806" dominant-baseline="central">EKS</text>
+<text x="196" y="1039" text-anchor="middle" font-size="11" fill="#633806" dominant-baseline="central">AKS</text>
 <rect x="236" y="1028" width="70" height="22" rx="4" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
 <text x="271" y="1039" text-anchor="middle" font-size="11" fill="#633806" dominant-baseline="central">KOPS</text>
  
