@@ -9,7 +9,7 @@
 
 <!-- ══════ TITLE BLOCK ══════ -->
 <rect x="0" y="0" width="960" height="66" fill="#0078D4"/>
-<text x="480" y="26" text-anchor="middle" font-size="21" font-weight="700" fill="#FFFFFF">Micro Services Project — Azure Edition</text>
+<text x="480" y="26" text-anchor="middle" font-size="21" font-weight="700" fill="#FFFFFF">Micro Services Project — Azure</text>
 <text x="480" y="52" text-anchor="middle" font-size="12" fill="#B5D4F4">Terraform · AKS · GitHub · Jenkins CI · ArgoCD CD · Azure Container Registry · Prometheus · Grafana</text>
 
 <!-- ══════ COLOUR LEGEND ══════ -->
