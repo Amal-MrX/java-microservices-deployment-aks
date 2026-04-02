@@ -9,7 +9,7 @@
 
 <!-- ══════ TITLE BLOCK ══════ -->
 <rect x="0" y="0" width="960" height="66" fill="#0078D4"/>
-<text x="480" y="26" text-anchor="middle" font-size="21" font-weight="700" fill="#FFFFFF">Micro Services Project-1 — Azure Edition</text>
+<text x="480" y="26" text-anchor="middle" font-size="21" font-weight="700" fill="#FFFFFF">Micro Services Project — Azure Edition</text>
 <text x="480" y="52" text-anchor="middle" font-size="12" fill="#B5D4F4">Terraform · AKS · GitHub · Jenkins CI · ArgoCD CD · Azure Container Registry · Prometheus · Grafana</text>
 
 <!-- ══════ COLOUR LEGEND ══════ -->
@@ -323,7 +323,7 @@
 <text x="690" y="1232" text-anchor="middle" font-size="11" fill="#0C447C" dominant-baseline="central">OIDC / RBAC</text>
 
 <!-- ══════ CONCEPT MAPPING CALLOUT ══════ -->
-<rect x="20" y="1320" width="920" height="118" rx="8" fill="#EBF4FF" stroke="#185FA5" stroke-width="1"/>
+<!-- <rect x="20" y="1320" width="920" height="118" rx="8" fill="#EBF4FF" stroke="#185FA5" stroke-width="1"/>
 <text x="480" y="1340" text-anchor="middle" font-size="12" font-weight="700" fill="#0C447C" dominant-baseline="central">AWS → Azure concept mapping (what changed from the original project)</text>
 
 <text x="40"  y="1364" font-size="11" fill="#444441">EKS / KOPS</text>
@@ -355,7 +355,7 @@
 <text x="156" y="1416" font-size="11" font-weight="600" fill="#2C2C2A">GitHub  (unchanged — already used)</text>
 
 <text x="400" y="1416" font-size="11" fill="#888780">Unchanged tools:</text>
-<text x="510" y="1416" font-size="11" font-weight="600" fill="#2C2C2A">Jenkins · ArgoCD · SonarQube · OWASP · Trivy · Helm · Prometheus · Grafana · Slack · Tomcat</text>
+<text x="510" y="1416" font-size="11" font-weight="600" fill="#2C2C2A">Jenkins · ArgoCD · SonarQube · OWASP · Trivy · Helm · Prometheus · Grafana · Slack · Tomcat</text>-->
 
 <!-- ══════ FOOTER ══════ -->
 <line x1="20" y1="1452" x2="940" y2="1452" stroke="#D3D1C7" stroke-width="0.8"/>
